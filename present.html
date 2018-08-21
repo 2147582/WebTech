@@ -48,18 +48,28 @@
         </div>
     </div> -->
 
-        <br>
+        <div style="padding-bottom: 10"></div>
             <!-- is this necessary? -->
-            <h1 class="ui left aligned header">
+            <h1 class="ui left aligned header" style="padding-left: 50px">
                 <i class="circular power off icon"></i> Web Systems and Technologies
             </h1>
-        <br>
 
+        <br>
+        <br>
+        
         <canvas id="arch" width="1200" height="500"></canvas>
         <div style="font-size: 50px; margin: auto;">
-            <i class="desktop icon zoomTarget" style="position: absolute; left: 97px; top: 248px;"></i>
-            <i class="mobile alternate icon" style="position: absolute; left: 98px; top: 397px;"></i>
+            <i class="desktop icon zoomTarget" style="position: absolute; left: 97px; top: 248px;">
+                <div id="Comp-detail" style="font-size: 3px; padding-top: 10px">
+                Neque porro quisquam est quisdsssssd dolorem ipsu</div>
+            </i>
+            <i class="mobile alternate icon" style="position: absolute; left: 98px; top: 397px;">
+                <div id="Comp-detail" style="font-size: 3px; padding-top: 10px">
+                Neque porro quisquam est qui dolorem ipsum </div>
+            </i>
             <i class="cloud icon" style="position: absolute; font-size: 100px; left: 327px; top: 327px;"></i>
+            
+            <div class="zoomTarget" data-targetsize="0.45" data-duration="600">This element zooms when clicked on.</div>
             <!-- <i class="desktop icon" style="position:absolute"></i>
         <i class="server icon"></i>
         <i class="cloud icon"></i>
@@ -107,7 +117,7 @@
             animationendcallback: null,
             // this specifies, that clicking an element that is zoomed to zooms
             // back out
-            closeclick: false,
+            closeclick: true,
             // don't reset scroll before zooming. less jaggy zoom starts and ends on
             // mobile browsers, but causes issues when zooming to elements when scrolled
             // to a specific distance in document, typically around 2000px on webkit.
@@ -115,5 +125,9 @@
         }
         // settings can be set for both the zoomTo and zoomTarget calls:
         $("#element").zoomTo(settings);
+        
+        $(document).ready(function() {
+        $("#element").zoomTarget();
+        });
     </script>
 </body>
