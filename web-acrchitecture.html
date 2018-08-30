@@ -82,25 +82,40 @@
 
         <div class="web-button" data-zoom="http" style="position: fixed; top: 26vw; left: 25vw;"></div>
         <div id="http" class="zoomTarget web-component ui segment" data-targetsize=".98" style="position: fixed; top: 23.5vw; left: 17vw;">
-            Some Text
+            <div class="ui horizontal divider">
+                Protocols
+            </div>
         </div>
 
         <div class="web-button" data-zoom="internet" style="position: fixed; top: 14.5vw; left: 44.6vw;"></div>
         <div id="internet" class="zoomTarget web-component ui segment" data-targetsize=".98" style="position: fixed; top: 14vw; left: 36.7vw;">
-            Some Text
+            <div class="ui horizontal divider">
+                Internet
+            </div>
         </div>
 
         <div class="web-button" data-zoom="web-servers" style="position: fixed; top: 29.5vw; left: 49.5vw;"></div>
         <div class="web-button" data-zoom="web-servers" style="position: fixed; top: 29.5vw; left: 63.6vw;"></div>
-        <div id="web-servers" class="zoomTarget web-component ui segment" data-targetsize=".98" style="position: fixed; top: 29.5vw; left: 46.5vw;">
-            Some Text
+        <div id="web-servers" class="zoomTarget web-component ui segment" data-targetsize=".98" style="position: fixed; top: 27.5vw; left: 46.5vw;">
+            <div class="ui horizontal divider">
+                Web Servers
+            </div>
         </div>
 
         <div class="web-button" data-zoom="dns-servers" style="position: fixed; top: 1vw; left: 62.3vw;"></div>
         <div id="dns-servers" class="zoomTarget web-component ui segment" data-targetsize=".98" style="position: fixed; top: 1vw; left: 51.5vw;">
-            Some Text
+            <div class="ui horizontal divider">
+                DNS Servers
+            </div>
         </div>
-
+        <div class="icon-button" data-zoom="html" style="position: fixed; top: 22vw; left: 62vw">
+            <i class="file code outline icon" style="font-size: 50px"></i>
+        </div>
+        <div id="html" class="zoomTarget web-component ui segment" data-targetsize=".98" style="position: fixed; top: 15vw; left: 48.5vw;">
+            <div class="ui horizontal divider">
+                Hyper Text Markup Language
+            </div>
+        </div>
     </div>
 
     <script>
@@ -108,6 +123,14 @@
             $('#main').click(function () {
                 $('.web-component').css("visibility", "hidden");
                 $('.content.active').removeClass("active");
+            });
+            $('.icon-button').click(function (e) {
+                var zoomData = $(this).data('zoom');
+                $('#' + zoomData).zoomTo({
+                    targetsize: 0.98,
+                });
+                e.stopPropagation();
+                $('#' + zoomData).css("visibility", "visible");
             });
             $('.web-button').click(function (e) {
                 var zoomData = $(this).data('zoom');
