@@ -13,8 +13,11 @@
     width: 33vw;
     height: 16vw;
     padding: 10px;
-    background: aquamarine;
-    /* visibility: hidden; */
+    /* background: aquamarine; */
+    z-index: 2;
+    visibility: hidden;
+    overflow-y: scroll;
+    font-size: 7px !important;
 }
 
 .web-button{
