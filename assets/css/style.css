@@ -1,0 +1,25 @@
+.web-diagram{
+    background: url(../images/web-diagram.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0;
+    width: 100%;
+    height: 93%;
+    position: fixed;
+    z-index: -1;
+}
+
+.web-component{
+    width: 33vw;
+    height: 16vw;
+    padding: 10px;
+    background: aquamarine;
+    /* visibility: hidden; */
+}
+
+.web-button{
+    width: 13vw;
+    height: 13vw;
+    border: 1px solid black;
+    cursor: pointer;
+}
