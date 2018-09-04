@@ -23,7 +23,7 @@
 .web-button{
     width: 13vw;
     height: 13vw;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     cursor: pointer;
 }
 
