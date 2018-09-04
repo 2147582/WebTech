@@ -9,6 +9,12 @@
     z-index: -1;
 }
 
+#main-body {
+
+  background-image: linear-gradient(grey, white, grey);
+
+}
+
 .web-component{
     width: 33vw;
     height: 16vw;
