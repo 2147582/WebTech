@@ -29,7 +29,11 @@
 .web-button{
     width: 13vw;
     height: 13vw;
+<<<<<<< HEAD
    /* border: 1px solid black; */
+=======
+    /*border: 1px solid black;*/
+>>>>>>> 943ef69816a98b40b69b06b84f5d1998de6081e4
     cursor: pointer;
 }
 
