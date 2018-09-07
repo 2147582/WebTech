@@ -1,5 +1,6 @@
+
 .web-diagram{
-    background: url(../images/web-diagram.png) no-repeat;
+    background: url(../images/web-diagram1.png) no-repeat;
     background-position: center;
     background-size: contain;
     margin: 0;
@@ -15,6 +16,21 @@
 
 }
 
+h1 {
+    color: white;
+    text-shadow: 3px 2px 8px white;
+}
+
+body{
+    background-image: url(../images/worldwide.jpg);
+    background-repeat: round; 
+    background-size: auto;
+}
+
+p {
+    font-size: 20px;
+}
+
 .web-component{
     width: 33vw;
     height: 16vw;
@@ -26,14 +42,11 @@
     font-size: 7px !important;
 }
 
+
+
 .web-button{
     width: 13vw;
     height: 13vw;
-<<<<<<< HEAD
-   /* border: 1px solid black; */
-=======
-    /*border: 1px solid black;*/
->>>>>>> 943ef69816a98b40b69b06b84f5d1998de6081e4
     cursor: pointer;
 }
 
