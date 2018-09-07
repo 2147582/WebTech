@@ -1,15 +1,4 @@
 
-.web-diagram{
-    background: url(../images/web-diagram1.png) no-repeat;
-    background-position: center;
-    background-size: contain;
-    margin: 0;
-    width: 100%;
-    height: 93%;
-    position: fixed;
-    z-index: -1;
-}
-
 #main-body {
 
   background-image: linear-gradient(grey, white, grey);
@@ -33,26 +22,3 @@ p {
     font-size: 20px;
 }
 
-.web-component{
-    width: 33vw;
-    height: 16vw;
-    padding: 10px;
-    /* background: aquamarine; */
-    z-index: 2;
-    visibility: hidden;
-    overflow-y: scroll;
-    font-size: 7px !important;
-}
-
-
-
-.web-button{
-    width: 13vw;
-    height: 13vw;
-    cursor: pointer;
-}
-
-.icon-button{
-    cursor: pointer;
-    z-index: -1;
-}
