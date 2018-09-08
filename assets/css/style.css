@@ -30,3 +30,12 @@ li {
 .clickable{
     cursor: pointer;
 }
+.filter {
+   -webkit-filter: invert(1);
+   filter: invert(1);
+   }
+.filter:hover {
+	-webkit-filter: invert(0);
+   filter: invert(0);
+}
+
