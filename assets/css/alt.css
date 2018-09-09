@@ -1,45 +1,3 @@
-
-#main-body {
-
-  background-image: linear-gradient(grey, white, grey);
-
-}
-
-h1 {
-    text-shadow: 3px 2px 8px white;
-}
-
-body{
-    background-image: url(../images/worldwide.jpg);
-    background-repeat: no-repeat; 
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-
-p {
-    font-size: 20px;
-}
-
-li {
-    white-space: pre-line;
-    font-size: 20px;
-}
-
-.clickable{
-    cursor: pointer;
-}
-.filter {
-   -webkit-filter: invert(1);
-   filter: invert(1);
-   }
-.filter:hover {
-	-webkit-filter: invert(0);
-   filter: invert(0);
-}
-
-<!-- -->
 .timeline {
 	max-width: 800px;
 	list-style: none;
@@ -175,14 +133,11 @@ li {
 			}
 	}
 
-.page-container{
-	margin-left: 12%;
-}
 
 /*Badge*/
 	.timeline > li > .timeline-badge {   
 		width: 50px;
-		height: 20px;
+		height: 50px;
 		line-height: 50px;
 		font-size: 1.2em;
 		text-align: center;
