@@ -173,21 +173,21 @@
             <div class="ui hidden divider"></div>
             <div class="ui container">
                 <h2 class="ui header">Transfer Control Protocol and Internet Protocol</h2>
-                <div class="ui button">
-                    Click me
-                </div>
-                <div class="ui modal">
-                    <i class="close icon"></i>
-                  <div class="header">TCP/IP</div>
-                  <div class="content">
-                    <p>
-                    Vincent Cerf, a computer scientist solved the problem of packet switching. <br>
-                    He invented the Transfer Control Protocol, and added Internet Protocol.
-                    </p>
-                      <p>
-                      Cerf's protocol transformed the internet into a worldwide network in the year 1980</p>
-                  </div>
-                </div>    
+                    <div class="ui button" id="TCP">
+                        Details
+                    </div>
+                    <div class="ui modal" id="showme">
+                        <i class="close icon"></i>
+                      <div class="header">TCP/IP</div>
+                      <div class="content">
+                        <p>
+                        Vincent Cerf, a computer scientist solved the problem of packet switching. <br>
+                        He invented the Transfer Control Protocol, and added Internet Protocol.
+                        </p>
+                          <p>
+                          Cerf's protocol transformed the internet into a worldwide network in the year 1980</p>
+                      </div>
+                    </div>    
             </div>    
             <div class="ui hidden divider"></div>
                 <hr>
@@ -210,6 +210,7 @@
                 </div>
             </div>
             <br>
+            <hr>
             
             <div class="ui container">
                 <h2>Domain Name System</h2>
@@ -272,8 +273,19 @@
             .accordion()
         ;
         $('.ui.modal')
-          .modal('toggle')
+            .modal()
         ;
+
     </script>
+        
+    <script type="text/javascript">
+
+     $(document).ready(function(){
+     $('#TCP').click(function(){
+        $('#showme').modal('show');    
+     });
+     });
+
+     </script>
     </body>
 </html>
