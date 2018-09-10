@@ -61,7 +61,7 @@
                                 solved the problem of packet switching by inventing the <a id="tcp-button" href="#"><b>Transfer
                                         Control Protocol (TCP)</b></a> and later he added the <a id="ip-button" href="#"><b>Internet
                                         Protocol (IP)</b></a>. Later on this time, <a id="ftp-button" href="#"><b>File
-                                    Transfer Protocol (FTP) was developed.</b></a></p>
+                                        Transfer Protocol (FTP) was developed.</b></a></p>
                         </div>
                     </div>
                     <div class="timeline-container timeline-left">
@@ -81,7 +81,8 @@
                     <div class="timeline-container timeline-left">
                         <div class="timeline-content">
                             <h2>1983</h2>
-                            <p><a href="#dns"><b>Domain Name System (DNS) </b></a> eestablished the common domains,such as .edu, .com, .org.</p>
+                            <p><a href="#dns"><b>Domain Name System (DNS) </b></a> eestablished the common domains,such
+                                as .edu, .com, .org.</p>
                         </div>
                     </div>
                 </div>
@@ -192,8 +193,7 @@
         <div class="header">File Transfer Protocol (FTP)</div>
         <div class="content">
             <p>
-                An Internet Protocol address or IP address is a unique combination of numbers that lets you
-                connect to the internet.
+                It is used for sending and retrieving a file or resource to a remote location.
             </p>
 
         </div>
@@ -254,6 +254,11 @@
             $('#smtp-button').click(function (e) {
                 e.preventDefault();
                 $('#smtp-modal').modal('show');
+            });
+
+            $('#ftp-button').click(function (e) {
+                e.preventDefault();
+                $('#ftp-modal').modal('show');
             });
         });
     </script>
