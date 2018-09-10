@@ -169,7 +169,27 @@
   </section>
 </section>  	
 		</div>
-		
+		<hr>
+            <div class="ui hidden divider"></div>
+            <div class="ui container">
+                <h2 class="ui header">Transfer Control Protocol and Internet Protocol</h2>
+                <div class="ui button">
+                    Click me
+                </div>
+                <div class="ui modal">
+                    <i class="close icon"></i>
+                  <div class="header">TCP/IP</div>
+                  <div class="content">
+                    <p>
+                    Vincent Cerf, a computer scientist solved the problem of packet switching. <br>
+                    He invented the Transfer Control Protocol, and added Internet Protocol.
+                    </p>
+                      <p>
+                      Cerf's protocol transformed the internet into a worldwide network in the year 1980</p>
+                  </div>
+                </div>    
+            </div>    
+            <div class="ui hidden divider"></div>
                 <hr>
                 <div class="ui container">
                 <h2>Uniform Resource Indentifier</h2>
@@ -197,7 +217,7 @@
                 </div>
             </div>
             <br>
-            <hr>
+            
             <div class="ui container">
                 <h2>Domain Name System</h2>
 
@@ -243,6 +263,9 @@
                     </tbody>
                 </table>
             </div>
+            
+        
+            
                 
                 
 	</div> 
@@ -254,7 +277,10 @@
     <script>
         $('.ui.accordion')
             .accordion()
-        ;    
+        ;
+        $('.ui.modal')
+          .modal('toggle')
+        ;
     </script>
     </body>
 </html>
