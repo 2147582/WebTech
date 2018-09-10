@@ -275,17 +275,25 @@
         $('.ui.modal')
             .modal()
         ;
-
+        $('.pop').each(function () {
+            var el = $(this);
+            el.popup({
+                on: 'hover',
+                delay: {
+                    show: 0,
+                    hide: 9999999999,
+                    inline: true
+                },
+                hoverable: true
+            });
+        });
+        $(document).ready(function(){
+         $('#TCP').click(function(){
+            $('#showme').modal('show');    
+        });
+        });
     </script>
         
-    <script type="text/javascript">
 
-     $(document).ready(function(){
-     $('#TCP').click(function(){
-        $('#showme').modal('show');    
-     });
-     });
-
-     </script>
     </body>
 </html>
