@@ -22,7 +22,7 @@
 }
 
 /* Container around content */
-.container {
+.timeline-container {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
@@ -30,7 +30,7 @@
 }
 
 /* The circles on the timeline */
-.container::after {
+.timeline-container::after {
     content: "";
     position: absolute;
     width: 25px;
@@ -44,17 +44,17 @@
 }
 
 /* Place the container to the left */
-.left {
+.timeline-left {
     left: 0;
 }
 
 /* Place the container to the right */
-.right {
+.timeline-right {
     left: 50%;
 }
 
 /* Add arrows to the left container (pointing right) */
-.left::before {
+.timeline-left::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -68,7 +68,7 @@
 }
 
 /* Add arrows to the right container (pointing left) */
-.right::before {
+.timeline-right::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -82,12 +82,12 @@
 }
 
 /* Fix the circle for containers on the right side */
-.right::after {
+.timeline-right::after {
     left: -16px;
 }
 
 /* The actual content */
-.content {
+.timeline-content {
     padding: 20px 30px;
     background-color: white;
     position: relative;
@@ -95,7 +95,7 @@
     box-shadow: 0px 0px 10px 2px grey;
 }
 
-.content h2 {
+.timeline-content h2 {
     padding: 15px;
     background: #0099ff;
     color: #fff;
@@ -115,14 +115,14 @@
     }
 
     /* Full-width containers */
-    .container {
+    .timeline-container {
         width: 100%;
         padding-left: 70px;
         padding-right: 25px;
     }
 
     /* Make sure that all arrows are pointing leftwards */
-    .container::before {
+    .timeline-container::before {
         left: 60px;
         border: medium solid white;
         border-width: 10px 10px 10px 0;
@@ -130,13 +130,13 @@
     }
 
     /* Make sure all circles are at the same spot */
-    .left::after,
-    .right::after {
+    .timeline-left::after,
+    .timeline-right::after {
         left: 15px;
     }
 
     /* Make all right containers behave like the left ones */
-    .right {
+    .timeline-right {
         left: 0%;
     }
 }
